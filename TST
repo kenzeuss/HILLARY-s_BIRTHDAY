@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<TITLE>HILARY's BIRTHDAY</TITLE>
+<link rel="shortcut icon" href="./happy-birthday-4904779_1920.jpg">
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffe6cc);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ff66a3;
+      color: white;
+      padding: 30px 10px;
+      font-size: 2em;
+      border-bottom: 5px solid #ff3399;
+    }
+
+    video, iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+    .content {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .card h2 {
+      color: #ff3399;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      background: #ff66a3;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1em;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff3385;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fff0f5;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+
+    🎉 HILLARY's BIRTHDAY 🎂
+  </header>
+
+  <div class="content">
+
+    <div class="card">
+      <h2>Un jour spécial pour une grande soeur exceptionnelle 💖</h2>
+      <p>
+        My dear <strong>sister</strong>,on this unique day, i wish you all the <strong>goodness</strong> of the world!
+        At this new year of your life let <strong>God</strong> full you with <strong>love</strong>, <strong>joy</strong>, and <strong>successe</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><strong>HILLARY's PICTURES</strong> 📸</h2>
+      <div class="gallery">
+        <img src="./hilla7.jpg" alt="Photo 1">
+        <img src="./photo_2_2025-08-02_15-00-40.jpg" alt="Photo 5">
+        <img src="./photo_3_2025-08-02_15-00-40.jpg" alt="Photo 6">
+        <img src="./photo_4_2025-08-02_15-00-40.jpg" alt="Photo 2">
+        <img src="./photo_5_2025-08-02_15-00-40.jpg" alt="Photo 3">
+        <img src="./photo_6_2025-08-02_15-00-40.jpg" alt="Photo 4">
+      </div>
+    </div>
+
+<div class="card">
+  <h2> <strong><h2>Bami..,Cameroonian, African</h2> 💖</strong> 🎬</h2>
+<video id="videoAnniv" width="500" muted loop playsinline>
+  <source src="./lv_0_20240803213329.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la vidéo HTML5.
+</video>
+
+</div>
+
+    <div class="card">
+      <h2>Clique pour lui souhaiter ❤️</h2>
+      <button class="btn" onclick="alert('🎈 Merci pour ton souhait !')">
+       <strong>HBD HILLARY 🎁</strong>
+      </button>
+    </div>
+
+  </div>
+
+  <footer>
+    <strong>Grace 💕, Longetivity ♾ 💫, and Successe</strong>🌟
+  </footer>
+
+  <script>
+  const video = document.getElementById("videoAnniv");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }, {
+    threshold: 0.6 // joue quand 60% de la vidéo est visible
+  });
+
+  observer.observe(video);
+</script>
+
+</body>
+</html>
